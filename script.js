@@ -22,9 +22,9 @@ setGridSize(16);
 function randomColor() {
     const color = [];
     //random rgb values
-    const firstRgb = Math.floor(Math.random() * 255);
-    const secondRgb = Math.floor(Math.random() * 255);
-    const thirdRgb = Math.floor(Math.random() * 255);
+    const firstRgb = Math.floor(Math.random() * 256);
+    const secondRgb = Math.floor(Math.random() * 256);
+    const thirdRgb = Math.floor(Math.random() * 256);
 
     color.push(firstRgb);
     color.push(secondRgb);
