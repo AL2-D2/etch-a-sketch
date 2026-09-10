@@ -1,0 +1,45 @@
+:root{
+    --random-color: rgb(255,255,255);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    border: 1px solid black;
+    width: 700px;
+    height: 700px;    
+}
+
+.col {
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: var(--random-color);
+    border: 1px solid purple;
+    width: 100%;
+    height: 100%;
+}
+
+.box:hover{
+    background-color: var(--random-color);
+}
