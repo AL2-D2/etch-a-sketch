@@ -1,7 +1,3 @@
-:root{
-    --random-color: rgb(255,255,255);
-}
-
 *,
 *::before,
 *::after {
@@ -40,6 +36,3 @@ body {
     height: 100%;
 }
 
-.box:hover{
-    background-color: var(--random-color);
-}
