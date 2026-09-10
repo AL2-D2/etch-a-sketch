@@ -36,11 +36,13 @@ function randomColor() {
 const boxes = document.querySelectorAll(".box");
 
 boxes.forEach(box => {
-    const rgbValuesArr = randomColor();
-    const firstRgb = rgbValuesArr[0];
-    const secondRgb = rgbValuesArr[1];
-    const thirdRgb = rgbValuesArr[2];
+    /* whenever mouse hovers over the boxes new set of random rgb is assigned to the array and then three 
+    rgb values assigned to the background color one by one.*/
     box.addEventListener("mouseover", () => {
+        const rgbValuesArr = randomColor();
+        const firstRgb = rgbValuesArr[0];
+        const secondRgb = rgbValuesArr[1];
+        const thirdRgb = rgbValuesArr[2];
         box.style.backgroundColor = `rgb(${firstRgb}, ${secondRgb}, ${thirdRgb})`;
     })
 });
