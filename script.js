@@ -15,12 +15,32 @@ function setGridSize(desiredNumber) {
     }
 }
 
+//default grid size
 setGridSize(16);
+
+//function that selects random color and returns arr of colors.. because in rgb() you use three different values
+function randomColor() {
+    const color = [];
+    //random rgb values
+    const firstRgb = Math.floor(Math.random() * 255);
+    const secondRgb = Math.floor(Math.random() * 255);
+    const thirdRgb = Math.floor(Math.random() * 255);
+
+    color.push(firstRgb);
+    color.push(secondRgb);
+    color.push(thirdRgb);
+
+    return color;
+}
 
 const boxes = document.querySelectorAll(".box");
 
 boxes.forEach(box => {
+    const rgbValuesArr = randomColor();
+    const firstRgb = rgbValuesArr[0];
+    const secondRgb = rgbValuesArr[1];
+    const thirdRgb = rgbValuesArr[2];
     box.addEventListener("mouseover", () => {
-        box.style.backgroundColor = "purple";
+        box.style.backgroundColor = `rgb(${firstRgb}, ${secondRgb}, ${thirdRgb})`;
     })
 });
